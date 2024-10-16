@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Loja-aula18</h1>
+    <nav>
+        <a href="#produtos">Produtos</a>
+        <a href="javascript:void(0);" id="menu-carrinho">Carrinho</a> <!-- Menu Carrinho -->
+        <a href="#login">Login</a>
+    </nav>
+    <div id="carrinho-header" onclick="abrirCarrinho()">
+        🛒 <span id="contador-carrinho">0</span>
+    </div>
+</header>
+
+<section id="produtos">
+    <h2>Catálogo de Produtos</h2>
+    <div id="produtos-lista"></div>
+</section>
+
+<!-- Modal do Carrinho -->
+<div id="modal-carrinho" class="modal">
+    <div class="modal-content">
+        <span class="fechar" onclick="fecharCarrinho()">&times;</span>
+        <h2>Seu Carrinho</h2>
+        <div id="carrinho-lista"></div>
+        <div id="total"></div>
+        <button id="finalizar-compra">Finalizar Compra</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+    
